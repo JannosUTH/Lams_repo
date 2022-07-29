@@ -1,0 +1,46 @@
+// Standard LAMS Skin. If you need to add anything add it to _main_base.scss and it will go in all skins.
+@import "_lams_variables_sch.scss";
+// Stylesheet Imports
+@import url("/lams/includes/font-awesome/css/font-awesome.min.css");
+@import url("/lams/css/bootstrap.min.css");
+// LAMS Classes and overrides
+@import "_dialogs.scss";
+@import "_inlineeditor.scss";
+@import "_learner_base.scss";
+
+.navbar-brand-login {
+    font-size: small;
+}
+
+.login-body {
+    display: none;
+}
+
+#editProfileButton, #editPortraitButton, #viewPolicies {  /* Επεξεργασία προφίλ */
+    display: none;
+}
+
+#editCourse { /* Επεξεργασία μαθήματος */
+    display: none;
+}
+
+a[href="https://lams.sch.gr/lams/admin/orgmanage.do?org=1"] {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    opacity: .65;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#templateContainerCell div[learninglibrarytitle="Pixlr"] {
+    display: none;
+}
+
+#templateContainerCell div[learninglibrarytitle="Share commonCartridge"] {
+    display: none;
+}
+
+#templateContainerCell div[learninglibrarytitle="MCQ"] {
+    display: none;
+}
